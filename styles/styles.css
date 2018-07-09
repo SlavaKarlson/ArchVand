@@ -1,0 +1,295 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #022027;
+}
+
+.header,.footer{
+  height: 50px;
+  background-color: rgba(197,208,230,0.35);
+  left:calc((100% - 800px) / 2);
+  right:calc((100% - 800px) / 2);
+  border-radius: 10px;  /*скруглить углы */
+  position: fixed;
+}
+.header{
+  top: 0;
+}
+.header__logo{
+  background-color: white;
+  display: block;
+  height: 100%;
+  width: 200px;
+  border-radius: 10px 0 0 10px;  /*скруглить углы */
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 21px;
+  /* text-align: center; */
+  font-weight: bold;
+  font-family: 'Abril Fatface', cursive;
+  line-height: 56px;
+}
+.header__logo::before{
+  display: block;
+  content: "";                       /*маст хэв*/
+  height: 100%;
+  width: 50px;
+  background-image: url("/archvand/source/Building_icon.ico");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+
+.page{
+  margin: 0 auto;
+  height: 100%;
+  width: 800px;
+  /*position: fixed;
+  top: 65px;
+  bottom: 65px;
+  width: 100%;
+  overflow-y: auto; */
+}
+
+.aside{
+  width: 200px;
+  position: fixed;
+  top: 65px;
+  bottom: 65px;
+}
+.aside__block{
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  display: block;
+  background-color: #f2f2f2;
+}
+.aside__block:last-child{
+  margin: 0;
+}
+
+.menu{
+  background-color: #aa98a9;
+  padding: 0;
+  display: block;
+  width: 100%;
+  border-radius: 10px;  /*скруглить углы */
+}
+.menu__item{
+  /* margin: 2px; /*со всех сторон*/
+  /* margin: 2px 2px; /*сверху,снизу справа,слева */
+  /* margin: 10px 20px 30px 40px; /*сверху справа снизу слева (по часовой стрелке) */
+  /* margin-top: 10px;*/
+  /* margin-right: 20px;*/
+  /* margin-bottom: 30px;*/
+  /* margin-left: 40px; */
+  display: block;
+  width: 100%;
+  height: 35px;
+  /*background-color: lightgreen;*/
+  line-height: 33px;
+  padding: 0 5px 0 8px;
+  box-sizing: border-box;
+  cursor: default;
+  font-weight: 500;
+}
+.menu__item:hover{
+  /* background-color: #e9e9e9; */
+  background-color: #c2b4c1;
+
+}
+.menu__item_select{
+  /* background-color: #F2F2F2; */
+  background-color: #c2b4c1;
+  font-weight: bold;
+  border-left: 3px solid #5d3954;
+  padding-left: 5px;
+}
+
+.auth{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  min-height: 85px;
+  /* background-color: #423c63; */
+  background-color: #574f82;
+  border-radius: 10px;  /*скруглить углы */
+}
+
+.auth-form{
+  width: 100%;
+}
+.auth-form__label,
+.auth-form__input{
+  margin-bottom: 3px;
+}
+.auth-form__label{}
+.auth-form__input{
+  width:100%;
+  box-sizing: border-box;
+}
+.auth-form__submit{
+  float:right;
+}
+
+.content{
+  overflow:hidden;
+  min-height: calc(100% - 160px);
+  width: 590px;
+  background-color: #e6e6fa;
+  float: right;
+  border-radius: 10px;  /*скруглить углы */
+  margin: 65px 0;
+  padding-bottom: 30px;
+}
+
+/* CONTACTS -------------------------------------------------------- CONTACTS */
+
+.contacts{
+  width: 100%;
+  overflow: hidden;
+  line-height: 30px;
+  font-size: 17px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.contacts__field{
+  font-weight: bold;
+  float: left;
+  margin: 0 5px 0 0;
+}
+.contacts__value:first-child{
+  font-weight: bold;
+}
+.contacts__map{
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* MAIN ---------------------------------------------------------------- MAIN */
+
+.main,.develop,.media{
+  width: 100%;
+  font-size: 17px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-indent: 30px;
+}
+.main__logo{
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Abril Fatface', cursive;
+}
+.main__title{
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 30px;
+  text-indent: 5px;
+  text-align: center;
+}
+.main__subtitle{
+  font-size: 18px;
+  color: #6b6b6b;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+.main__text{
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* DEVELOP ---------------------------------------------------------- DEVELOP */
+
+.develop{
+}
+.develop__description{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.develop__title{
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 30px;
+  text-indent: 5px;
+  text-align: center;
+}
+.develop__text{
+  text-align: justify;
+  margin-top: 10px;
+}
+.develop__projects{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* background-color: lightcoral; */
+}
+.develop__projects > .project{
+  margin-bottom: 5px;
+}
+.develop__projects > .project:last-child{
+  margin-bottom: 0;
+}
+
+.project{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #e3dae0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px 15px;
+  box-sizing: border-box;
+}
+.project__title,
+.project__info,
+.project__date,
+.project__manager,
+.project__content{
+  padding: 0;
+  text-indent: 0;
+  margin-bottom: 3px;
+}
+.project__title{
+  font-size: 19px;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.project__info{
+  width: 100%;
+  font-size: 11px;
+  font-style: italic;
+}
+.project__date{
+  float: left;
+  margin-right: 3px;
+}
+.project__manager{
+}
+.project__content{
+  /* font-family: 'Slabo 27px', serif; */
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+/* MEDIA -------------------------------------------------------------- MEDIA */
+
+.media{
+}
+/* FOOTER ------------------------------------------------------------ FOOTER */
+
+.footer{
+  bottom: 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.footer__year,.footer__copyright{
+  float: right;
+  margin-left: 5px;
+  line-height: 40px;
+}
